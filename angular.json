@@ -80,9 +80,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-ecommerce:build",
-            "sslKey": "./ssl-localhost/localhost.key",
-            "sslCert": "./ssl-localhost/localhost.crt"
+            "browserTarget": "angular-ecommerce:build"
           },
           "configurations": {
             "production": {
