@@ -31,7 +31,7 @@ jobs:
     
     - name: Build the project
       run: |
-        npm run build
+        npm run deploy
         echo "CLIENT_ID=${{ secrets.CLIENT_ID }}"
         echo "ISSUER=${{ secrets.ISSUER }}"
         echo "REDIRECT_URI=${{ secrets.REDIRECT_URI }}"

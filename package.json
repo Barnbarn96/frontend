@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "set NODE_OPTIONS=--openssl-legacy-provider && ng deploy --base-href=https://barnbarn96.github.io/frontend/"
+    "deploy": "export NODE_OPTIONS=--openssl-legacy-provider && ng build --configuration production --base-href /frontend/"
   },
   "private": false,
   "dependencies": {
