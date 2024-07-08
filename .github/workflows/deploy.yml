@@ -5,9 +5,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ "gh-pages" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "gh-pages" ]
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -45,3 +45,4 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./docs
+        branch: gh-pages
