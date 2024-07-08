@@ -20,12 +20,12 @@ export class LoginComponent implements OnInit {
       features: {
         registration: true
       },
-      baseUrl: process.env.ISSUER.split('/oauth2')[0],
-      clientId: process.env.CLIENT_ID,
-      redirectUri: process.env.REDIRECT_URI,
+      baseUrl: myAppConfig.oidc.issuer.split('/oauth2')[0],
+      clientId: myAppConfig.oidc.clientId,
+      redirectUri: myAppConfig.oidc.redirectUri,
       authParams:{
         pkce: true,
-        issuer: process.env.ISSUER,
+        issuer: myAppConfig.oidc.issuer,
         scopes: myAppConfig.oidc.scopes
       }
     });
