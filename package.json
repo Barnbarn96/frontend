@@ -4,10 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "set NODE_OPTIONS=--openssl-legacy-provider && ng serve",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider && ng build --configuration production --base-href https://barnbarn96.github.io/frontend/",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && ng build --configuration production --base-href /frontend/",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "set NODE_OPTIONS=--openssl-legacy-provider && ng deploy --base-href=https://barnbarn96.github.io/frontend/"
   },
   "private": false,
   "dependencies": {
