@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\BARNABASSOHYIJIE\Desktop\ecommerce\EcommerceApp\03-frontend\Angular_frontend\src\main.ts */"zUnb");
+module.exports = __webpack_require__(/*! C:\Users\BARNABASSOHYIJIE\Desktop\ecommerce\frontend\src\main.ts */"zUnb");
 
 
 /***/ }),
