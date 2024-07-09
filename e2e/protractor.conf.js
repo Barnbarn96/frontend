@@ -17,7 +17,7 @@ exports.config = {
   },
   directConnect: true,
   SELENIUM_PROMISE_MANAGER: false,
-  baseUrl: 'https://barnbarn96.github.io/EcommerceApp/',
+  baseUrl: 'https://barnbarn96.github.io/frontend/',
   framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,
