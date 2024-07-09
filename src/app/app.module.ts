@@ -71,8 +71,7 @@ const routes : Routes = [
     LoginComponent,
     LoginStatusComponent,
     MembersPageComponent,
-    OrderHistoryComponent,
-    RouterModule
+    OrderHistoryComponent
   ],
   imports: [
     RouterModule.forRoot(routes, {useHash: true}),
