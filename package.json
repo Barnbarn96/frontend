@@ -4,11 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "set NODE_OPTIONS=--openssl-legacy-provider && ng serve",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider && ng build --configuration production --base-href https://Barnbarn96.github.io/frontend/",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && shx cp src/index.html src/404.html && ng build --configuration production --base-href https://Barnbarn96.github.io/frontend/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "export NODE_OPTIONS=--openssl-legacy-provider && ng build --configuration production --base-href https://Barnbarn96.github.io/frontend/"
+    "deploy": "export NODE_OPTIONS=--openssl-legacy-provider &&  shx cp src/index.html src/404.html && ng build --configuration production --base-href https://Barnbarn96.github.io/frontend/"
   },
   "private": false,
   "dependencies": {
@@ -27,6 +27,7 @@
     "bootstrap": "^5.0.1",
     "dotenv": "^16.4.5",
     "rxjs": "~6.6.0",
+    "shx": "^0.3.4",
     "stripe": "^16.1.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"
